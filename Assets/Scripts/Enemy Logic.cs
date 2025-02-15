@@ -8,14 +8,20 @@ public class EnemyLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         transform.Translate(Vector2.up * Time.deltaTime * speed);
+
+        if (transform.position.y < -6)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision) 
     {
         if (collision.GetComponent<Player>() != null)
         {
 
-            Debug.Log("ENEMY TOUCHED OLALA");
+            Destroy(gameObject);
             
         }
         

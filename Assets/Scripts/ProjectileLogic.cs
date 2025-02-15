@@ -8,17 +8,17 @@ public class ProjectileLogic : MonoBehaviour
 
     void Start()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            SpawnProjectile();
-        }
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("Jump"))
+        {
+            SpawnProjectile();
+        }
     }
 
     // Projectile Shooter

@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
     // Meteor Spawns
     void SpawnMeteor()
     {
-        int rx = Random.Range(-10, 10);
+        int rx = Random.Range(-8, 8);
 
         Vector3 position = new Vector3(rx, 5, 0);
 
